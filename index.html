@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="icon">
+            <img src="3_low.png" alt="">
+            <h2 div class="logo">Gandhi Rachnatmak Samiti
+        </div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a>
+                <li><a href=".cotainer3">About Us</a>
+                <li><a href="#">Teams</a>
+                <li><a href="#">Alumini</a>
+                <li><a href=".container6">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ----------------------------------------------------------
+    ----------------------------------------------------------------
+    ----------------------------------------------------->
+
+    <div class="container1">
+        <div class="leftside1">
+            <div class="textbox1">"No call is greater</div>
+            <div class="textbox2">than public service"</div>
+
+            <div class="textbox3">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Iusto doloribus, non
+                quibusdam soluta sit explicabo eveniet sed quisquam
+                velit dolores enim id nisi provident. Ab, modi obcaecati
+                dignissimos iure fugit dicta, veritatis totam necessitatibus
+                sit nisi molestias eum dolore. Qui officiis molestiae ipsa
+                laudantium tempora eaque voluptas ex eum debitis.</div>
+
+            <button class="btn1">
+                Join us
+            </button>
+
+        </div>
+        <div class="rightside1">
+            <div class="leftcol1">
+                <div class="square"></div>
+            </div>
+            <div class="rightcol1">
+                <img src="gandhi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------
+    -----------------------------------------------------------------
+    ----------------------------------------------------------------- -->
+    <div class="backgroundimage">
+        <div class="container2">
+            <div class="textbox4">
+                Gallery
+            </div>
+            <div class="slideshow">
+                <div class="Slide fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="21.jpeg" style="width:100%">
+                    <div class="text">Caption One</div>
+                </div>
+
+                <div class="Slide fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="23.jpeg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="Slide fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="14.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("Slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------- -->
+    <div class="backgroundimage1">
+        <div class="container3">
+            <div class="leftside2">
+                <div class="leftcol2">
+                    <img src="About_Us.jpeg" alt="">
+
+                </div>
+                <div class="rightcol2">
+                    <div class="square1">
+                        <h3>Contact Us</h3>
+                        <img src="location.png" alt="">
+                        <div class="textbox5">
+                            <p>GRS Club Bit Sindri
+                                <br>
+                                Beside Canteen
+                            </p>
+                        </div>
+                        <img src="phone.png" alt="">
+                        <div class="textbox5">
+                            <p>(+91)-9999999999</p>
+                        </div>
+                        <img src="envelope.png" alt="">
+                        <div class="textbox5">
+                            <p>grsbitsindri@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="rightside2">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam neque voluptates similique cum suscipit sint error ipsum,
+                    ad soluta sapiente. Nisi dignissimos debitis iusto tenetur!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur repudiandae voluptatibus inventore rerum officia neque, vitae
+                    voluptates nam repellendus enim sit, quam harum ipsa magnam hic?
+                    Obcaecati,
+                    quibusdam eaque. Quibusdam quisquam iste
+                    ipsum ipsam voluptatum. Voluptas tempore praesentium beatae laudantium.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    ----------------------------------------------------------------------- -->
+    <div class="backgroundimage2">
+        <div class="container4">
+            <div class="leftside4">
+                <div class="leftcol4">
+                    <div class="box1">
+                        <img src="16.jpg" alt="" class="src">
+                    </div>
+                    <div class="box2">
+                        <img src="17.jpg" alt="" class="src">
+                    </div>
+    
+                </div>
+                <div class="rightcol4">
+                    <div class="box3">
+                        <img src="18.jpg" alt="" class="src">
+                    </div>
+                </div>
+            </div>
+            <div class="rightside4">
+                <h1>Testimonials</h1>
+                <ul>
+                    <li>
+                        Confidence <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eligendi ipsum non nisi vel culpa sequi pariatur nobis?
+                        Velit, qui dolore.
+                    </li>
+                    <li>
+                        TeamWork <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eligendi ipsum non nisi vel culpa sequi pariatur nobis?
+                        Velit, qui dolore.
+                    </li>
+                    <li>
+                        Leadership <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eligendi ipsum non nisi vel culpa sequi pariatur nobis?
+                        Velit, qui dolore.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+    <!-- --------------------------------------------------------------------
+    -------------------------------------------------------------------------
+    ------------------------------------------------------------------------- -->
+    
+    
+    <div class="backgroundimage3">
+        <div class="container5">
+            <div class="textbox7">
+                Events
+            </div>
+            
+            <div class="box5">
+    
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="25.jpeg" alt="">
+                            <h3>Open Mic</h3>
+    
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <div class="card">
+                            <img src="22.jpeg" alt="">
+                            <h3>Maneuver</h3>
+    
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <div class="card">
+                            <img src="23.jpeg" alt="">
+                            <h3>Sidhi Baat</h3>
+    
+                        </div>
+                    </div>
+    
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------- -->
+
+    <div class="container6">
+        <div class="last1">
+            <div class="last1a">
+                <img src="3_low.png" alt="">
+                Gandhi Rachnatmak Samiti
+            </div>
+            
+            <div class="last2">
+                Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quam vitae delectus exercitationem tenetur iusto voluptas?
+            </div>
+        </div>
+        <div class="last4">
+            <div class="last5">
+                <div class="last6">Home</div>
+                <div class="last6">Teams</div>
+                <div class="last6">Contact Us</div>
+                <div class="last6">Alumini</div>
+                <div class="last6">About Us</div>
+                
+            </div>
+            <div class="last5">
+                <div class="last6">Home</div>
+                <div class="last6">Teams</div>
+                <div class="last6">Contact Us</div>
+                <div class="last6">Alumini</div>
+                <div class="last6">About Us</div>
+                
+                
+            </div>
+        </div>
+        <div class="last8">
+            <div class="textbox18">
+                <a href="https://www.instagram.com/grsbitsindri/">Follow us on Instagram</a>
+                
+            </div>
+            <div class="space4">
+                <div class="space5">
+                    <img src="maa.jpg" alt="">
+                    <img src="flag.jpg" alt="">
+                </div>
+                <div class="space5"> 
+                    <img src="gita1.jpg" alt="">
+                    <img src="gandhi.jpg" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+
+
+
+</body>
+
+</html>
